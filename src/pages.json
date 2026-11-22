@@ -1,0 +1,51 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/factory/factory",
+      "style": {
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/growth/growth",
+      "style": {
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": false
+      }
+    }
+  ],
+  "tabBar": {
+    "color": "#9ba5c1",
+    "selectedColor": "#f7c965",
+    "backgroundColor": "#20263c",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "彩票大厅"
+      },
+      {
+        "pagePath": "pages/factory/factory",
+        "text": "经营工厂"
+      },
+      {
+        "pagePath": "pages/growth/growth",
+        "text": "成长中心"
+      }
+    ]
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "幸运刮刮乐",
+    "navigationBarBackgroundColor": "#171b2e",
+    "backgroundColor": "#171b2e"
+  }
+}

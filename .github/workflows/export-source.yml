@@ -1,0 +1,30 @@
+
+name: Export Project Source
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Package source
+        run: |
+          zip -r lucky-scratch-source.zip . \
+            -x ".git/*" \
+               "*/.git/*" \
+               "*/node_modules/*" \
+               "*/dist/*" \
+               "*/coverage/*" \
+               "*/.DS_Store"
+
+      - name: Upload ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: lucky-scratch-source
+          path: lucky-scratch-source.zip
+          retention-days: 3

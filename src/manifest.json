@@ -1,0 +1,15 @@
+{
+  "name": "幸运刮刮乐",
+  "appid": "wx87e07b2b8a298988",
+  "description": "幸运刮刮乐 - 虚拟金币单机经营游戏",
+  "versionName": "2.1.0",
+  "versionCode": "210",
+  "transformPx": false,
+  "app-plus": { "usingComponents": true, "nvueStyleCompiler": "uni-app" },
+  "mp-weixin": {
+    "appid": "wx87e07b2b8a298988",
+    "setting": { "urlCheck": false, "es6": true, "postcss": true, "minified": true },
+    "usingComponents": true,
+    "permission": {}
+  }
+}
